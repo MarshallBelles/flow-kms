@@ -1,0 +1,41 @@
+{
+  "name": "@marshallbelles/flow-kms",
+  "version": "1.0.0",
+  "description": "Flow SDK with TypeScript bindings and Google KMS integration",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "rm -rf dist && jest",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarshallBelles/flow.ts.git"
+  },
+  "keywords": [],
+  "author": "MarshallBelles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarshallBelles/flow.ts/issues"
+  },
+  "homepage": "https://github.com/MarshallBelles/flow.ts#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@google-cloud/kms": "^2.10.0",
+    "@marshallbelles/flow-rest": "^2.0.3",
+    "@types/jest": "^27.4.0",
+    "debug": "^4.3.3",
+    "fast-crc32c": "^2.0.0",
+    "jest": "^27.4.7",
+    "key-encoder": "^2.0.3",
+    "ts-jest": "^27.1.2"
+  }
+}
